@@ -3,7 +3,13 @@ import java.util.Map;
 
 public class ArtistStatistics {
     Map<User, Integer> trackPlays = new HashMap<>();
-    Map<User, Track> artistFan = new HashMap<>();
+
+    @Override
+    public String toString() {
+        return "ArtistStatistics{" +
+                "trackPlays=" + trackPlays +
+                '}';
+    }
 
     //How many different users have streamed my music?
     public void recordPlay(User user) {
@@ -20,7 +26,7 @@ public class ArtistStatistics {
         int max = 0;
         User topFan = null;
         for (Map.Entry<User, Integer> entry : trackPlays.entrySet()) {
-            if(entry.getValue() > max){
+            if (entry.getValue() > max) {
                 max = entry.getValue();
                 topFan = entry.getKey();
             }

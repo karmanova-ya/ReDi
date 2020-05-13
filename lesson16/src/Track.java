@@ -4,6 +4,13 @@ public class Track {
     private Artist artist;
     private String albumName;
 
+    public Track(int id, String name, Artist artist, String albumName) {
+        this.id = id;
+        this.name = name;
+        this.artist = artist;
+        this.albumName = albumName;
+    }
+
     public Artist getArtist() {
         return artist;
     }

@@ -18,15 +18,11 @@ public class Player {
         } else {
             artistStatistics.put(track.getArtist(), new ArtistStatistics());
         }
-
-        System.out.println("User " + user.getName() + " plays the track " + track.getName());
-//    "Now playing: <artist_name> - <track_name>"
+        System.out.println("User " + user.getName() + " plays the track " + track.getName() + " from artist " + track.getArtist().getName());
     }
 
-//    public void getTopFanForArtist(Artist artist) {
-//        return artistStatistics.get(artist).getTopFan();
-//    }
-
-
+    public User getTopFanForArtist(Artist artist) {
+        System.out.println("The top listener for " + artist.getName() + " was " + artistStatistics.get(artist).getTopFan().getName());
+        return artistStatistics.get(artist).getTopFan();
+    }
 }
-//How many streams have there been in total?
