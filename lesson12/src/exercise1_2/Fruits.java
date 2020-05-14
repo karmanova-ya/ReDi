@@ -1,4 +1,4 @@
-package exercise1;
+package exercise1_2;
 
 import java.util.HashSet;
 import java.util.Set;
