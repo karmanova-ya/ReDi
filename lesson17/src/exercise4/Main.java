@@ -10,13 +10,19 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.print("Input here - ");
         try {
-            String fileName = input.next(); //   /Users/yanakarmanova/Desktop/Dev/ReDi/readFile.txt
-            Files.lines(new File(fileName).toPath())
+            //input file path
+            String fileName = input.next(); //   readFile.txt from GitHub
+            //open the file for reading line by line
+            File fileIn = new File(fileName);
+            Files.lines(fileIn.toPath())
                     .map(s -> s.trim())
                     .filter(s -> !s.isEmpty())
                     .forEach(System.out::println);
         }catch (IOException ex){
             System.out.println("Check that the path is entered correctly");
+        }finally {
+            input.close();
+            System.out.println("Cleanup completed");
         }
     }
 }
