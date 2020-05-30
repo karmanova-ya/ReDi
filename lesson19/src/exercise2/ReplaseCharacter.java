@@ -1,15 +1,12 @@
-package exercise1;
+package exercise2;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Scanner;
 
-public class Main {
+public class ReplaseCharacter {
     static String path = "/Users/yanakarmanova/Desktop/Dev/ReDi/sherlock.txt";
-    static String newPath = "/Users/yanakarmanova/Desktop/Dev/ReDi/Adventures of Yana Karmanova.txt";
+    static String newPath = "/Users/yanakarmanova/Desktop/Dev/ReDi/The Adventures of Yana Karmanova.txt";
 
-//Exercise 2
     public static boolean createNewFile() throws IOException {
         FileReader readFile = new FileReader(path);
         File fileToBeModified = new File(newPath);
@@ -23,35 +20,18 @@ public class Main {
                     .replaceAll("Sherlock", "Yana")
                     .replaceAll("Holmes", "Karmanova") + System.lineSeparator();
 
-// Let your program save the data to a new file with the name "Adventures of your name"
+// Save the data to a new file
             writer.write(newContent);
         }
         return true;
     }
 
     public static void main(String[] args) {
-//Exercise 1
         try {
-            FileReader readFile = new FileReader("/Users/yanakarmanova/Desktop/Dev/ReDi/sherlock.txt");
-// Read the file with a Scanner
-            System.out.println("**********************************************************");
-            Scanner input = new Scanner(readFile);
-            int count = 0;
-            while (input.hasNext()) {
-
-                System.out.println(input.nextLine());
-                count++;
-            }
-            System.out.println(count);
-// Read the file with the readAllLines utility from Files
-            System.out.println("**********************************************************");
-            System.out.println(Files.readAllLines(Paths.get(path)));
-
-            System.out.println("**********************************************************");
             createNewFile();
-
-
-        } catch (FileNotFoundException var3) {
+            System.out.println("You created your story " + "<<" + newPath.substring(38) + ">>");
+        } catch (
+                FileNotFoundException var3) {
             System.out.println("File is not there");
             System.exit(-1);
         } catch (IOException e) {
