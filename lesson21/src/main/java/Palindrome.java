@@ -1,5 +1,5 @@
 public class Palindrome {
-    public static boolean isPalindrome(String inputString) {
+    public boolean isPalindrome(String inputString) {
 
         if (inputString.length() <= 1) {
             return true;
