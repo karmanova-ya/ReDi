@@ -4,17 +4,17 @@ public class Main {
         bankAccount.Account db = new bankAccount.Account(123);
         bankAccount.Account n26 = new bankAccount.Account(987);
         bankAccount.Customer yana = new bankAccount.Customer("Yana", "Karmanova", db);
-        bankAccount.Customer ira = new bankAccount.Customer("Irina", "Rykunova", n26);
+        bankAccount.Customer stefan = new bankAccount.Customer("Stefan", "Kraus", n26);
 
         yana.getAccount().deposit(90);
-        ira.getAccount().deposit(70);
+        stefan.getAccount().deposit(70);
 
         yana.getAccount().withdraw(23);
-        ira.getAccount().withdraw(100);
+        stefan.getAccount().withdraw(100);
 
         yana.getAccount().transfer(n26, 30);
 
-        Bank bank = new Bank();
+        BankService bank = new BankService();
 
         bank.addPayment(new Payment(1, 5, Category.INCOME, 4, 2019));
         bank.addPayment(new Payment(2, -10.5, Category.CAFE, 4, 2019));
