@@ -11,6 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="accountingSoftwareProject" target="8" />
       <module name="lesson07.main" target="1.8" />
       <module name="lesson07.test" target="1.8" />
     </bytecodeTargetLevel>

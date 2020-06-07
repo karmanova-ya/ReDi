@@ -1,7 +1,5 @@
 public class FizzBuzz {
 
-
-
     public static void main(String[] args) {
         int start = Integer.parseInt(args[0]);
         int end = Integer.parseInt(args[1]);
@@ -27,5 +25,4 @@ public class FizzBuzz {
             System.out.println("");
         return result;
     }
-
 }

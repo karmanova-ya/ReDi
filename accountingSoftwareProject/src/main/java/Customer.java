@@ -1,43 +1,12 @@
 public class Customer {
 
     private Account account;
-    String name;
-    String lastName;
-
-    public Account getAccount() {
-        return account;
-    }
-
-    public void setAccount(Account account) {
-        this.account = account;
-    }
+    private String name;
+    private String lastName;
+    private double balance = 0;
+    private int id;
 
     public Customer(String name, String lastName, Account account){
-        this.name = name;
-        this.lastName = lastName;
-        this.account = account;
-    }
-}
-/*
-package bankAccount;
-
-public class Customer {
-
-    private Account account;
-    String name;
-    String lastName;
-    int id;
-    double balance = 0;
-
-    public Account getAccount() {
-        return account;
-    }
-
-    public void setAccount(Account account) {
-        this.account = account;
-    }
-
-    public Customer(String name, String lastName, Account account) {
         this.name = name;
         this.lastName = lastName;
         this.account = account;
@@ -60,12 +29,50 @@ public class Customer {
         }
     }
 
-    void transfer(bankAccount.Account accTran, double tranTo) {
+    void transfer(Account accTran, double tranTo) {
         withdraw(tranTo);
-
         accTran.deposit(tranTo);
         System.out.println("Transfer complete");
     }
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
 }
 
- */

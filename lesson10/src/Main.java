@@ -1,10 +1,10 @@
-import devices.Device;
-import devices.Phone;
-import devices.Tablet;
-import plans.BasicPlan;
-import plans.Plan;
-import plans.PremiumPlan;
-import plans.StandardPlan;
+import netflixDevices.Device;
+import netflixDevices.Phone;
+import netflixDevices.Tablet;
+import netflixPlans.BasicPlan;
+import netflixPlans.Plan;
+import netflixPlans.PremiumPlan;
+import netflixPlans.StandardPlan;
 
 public class Main {
     public static void main(String[] args) {

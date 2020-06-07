@@ -18,23 +18,7 @@ public class Main {
         john.introduce();
 
 
-//
-//        Account db = new Account(123);
-//        Account n26 = new Account(987);
-//        Customer yana = new Customer("Yana", "Karmanova", db);
-//        Customer ira = new Customer("Irina", "Rykunova", n26);
-//
-//        yana.getAccount().deposit(90);
-//        ira.getAccount().deposit(70);
-//
-//        yana.getAccount().withdraw(23);
-//        ira.getAccount().withdraw(100);
-//
-//        yana.getAccount().transfer(n26, 30);
-
-
-
-/*//        Car mini = new Car("Mini Cooper", 50, 210, false, new String[]{"name1", "name2"});
+/*        Car mini = new Car("Mini Cooper", 50, 210, false, new String[]{"name1", "name2"});
         Car mini = new Car("Mini Cooper", 50, 210, false);
 
         mini.drive();

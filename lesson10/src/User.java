@@ -1,5 +1,5 @@
-import devices.Device;
-import plans.Plan;
+import netflixDevices.Device;
+import netflixPlans.Plan;
 
 public class User {
     public String eMail;

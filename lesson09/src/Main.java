@@ -1,7 +1,7 @@
-import accounts.BasicUser;
-import accounts.PremiumUser;
-import accounts.StandardUser;
-import devices.Device;
+import netflixAccounts.BasicUser;
+import netflixAccounts.PremiumUser;
+import netflixAccounts.StandardUser;
+import netflixDevices.Device;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,28 +29,5 @@ public class Main {
         dima.watchUltraHD(laptop, "Knives Out");
         dima.watchUltraHD(tv, "Avengers");
         dima.watchUltraHD(phone, "Long shot");
-
-
-/*
-        person.Student student = new person.Student("Flo", 25, "Berlin");
-        student.introduce();
-
-        person.Teacher teacher = new person.Teacher("Alina", "Berlin", "Java", 5);
-        teacher.introduce();
-        teacher.teach("Java");
-
-        Doctor doc = new Doctor("Who", "Gallifrey", "Save the Universe");
-        doc.introduce();
-
-        Dentist den = new Dentist("Den", "New York");
-        den.introduce();
-
-        Developer dev = new Developer("David", 28, "London");
-        dev.getProgramLang().add("Java");
-        dev.getProgramLang().add("JavaScript");
-        dev.getProgramLang().add("Kotlin");
-        dev.getProgramLang().add("Go");
-        dev.introduce();
-*/
     }
 }

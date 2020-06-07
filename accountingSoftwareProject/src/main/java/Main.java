@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
 
-        bankAccount.Account db = new bankAccount.Account(123);
-        bankAccount.Account n26 = new bankAccount.Account(987);
-        bankAccount.Customer yana = new bankAccount.Customer("Yana", "Karmanova", db);
-        bankAccount.Customer stefan = new bankAccount.Customer("Stefan", "Kraus", n26);
+        Account db = new Account(123);
+        Account n26 = new Account(987);
+        Customer yana = new Customer("Yana", "Karmanova", db);
+        Customer stefan = new Customer("Stefan", "Kraus", n26);
 
         yana.getAccount().deposit(90);
         stefan.getAccount().deposit(70);
